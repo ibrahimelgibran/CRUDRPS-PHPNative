@@ -8,6 +8,7 @@
         /* Gaya untuk latar belakang dan tata letak */
         body {
             display: flex;
+            background-color: palevioletred;
             justify-content: center;
             align-items: center;
             height: 100vh;
@@ -54,7 +55,7 @@
         }
 
         .btn:hover {
-            background-color: #BF8FCC;
+            background-color: palevioletred;
         }
     </style>
 </head>

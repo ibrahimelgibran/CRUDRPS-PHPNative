@@ -26,7 +26,7 @@ if (mysqli_num_rows($sql) < 1) {
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-color: #f5f5f5;
+            background-color: palevioletred;
         }
 
         .content {
@@ -75,7 +75,7 @@ if (mysqli_num_rows($sql) < 1) {
         }
 
         input[type="submit"]:hover {
-            background-color: #BF8FCC;
+            background-color: palevioletred;
         }
     </style>
 </head>
