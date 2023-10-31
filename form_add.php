@@ -8,7 +8,7 @@
         /* Gaya untuk latar belakang dan tata letak */
         body {
             display: flex;
-            background-color: palevioletred;
+            background-color: #ffc436;
             justify-content: center;
             align-items: center;
             height: 100vh;
@@ -17,7 +17,7 @@
 
         /* Gaya untuk kontainer formulir */
         .center-container {
-            background-color: #f5f5f5;
+            background-color: #f7e987;
             padding: 20px;
             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
             width: 400px;
@@ -44,7 +44,7 @@
 
         /* Gaya untuk tombol */
         .btn {
-            background-color: #DDA0DD;
+            background-color: palevioletred;
             color: #fff;
             border: none;
             padding: 10px 20px;
@@ -55,7 +55,7 @@
         }
 
         .btn:hover {
-            background-color: palevioletred;
+            background-color: plum;
         }
     </style>
 </head>

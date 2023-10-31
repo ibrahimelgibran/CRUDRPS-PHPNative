@@ -26,11 +26,11 @@ if (mysqli_num_rows($sql) < 1) {
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-color: palevioletred;
+            background-color: #9d76c1;
         }
 
         .content {
-            background-color: #fff;
+            background-color: #e5cff7;
             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
             padding: 20px;
             border-radius: 8px;
@@ -66,7 +66,7 @@ if (mysqli_num_rows($sql) < 1) {
         }
 
         input[type="submit"] {
-            background-color: #DDA0DD;
+            background-color: #9d76c1   ;
             color: #fff;
             border: none;
             padding: 10px 20px;
@@ -75,7 +75,7 @@ if (mysqli_num_rows($sql) < 1) {
         }
 
         input[type="submit"]:hover {
-            background-color: palevioletred;
+            background-color: purple;
         }
     </style>
 </head>

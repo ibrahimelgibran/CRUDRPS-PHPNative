@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +7,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: palevioletred;
+            background-color: #ffc436;
             margin: 0;
             padding: 0;
         }
@@ -17,8 +16,13 @@
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #fff;
+            background-color: #f7e987;
             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
         }
 
         table {
@@ -29,31 +33,42 @@
 
         th, td {
             border: 1px solid #ddd;
-            padding: 8px;
+            padding: 12px;
+            background-color: #fff;
             text-align: left;
         }
 
         th {
-            background-color: #f2f2f2;
+            background-color: #fff;
+            color: #333;
         }
 
         tr:hover {
             background-color: #e0e0e0;
         }
 
-        .satu {
-            width: 30px;
-        }
-
         th:nth-child(2) {
             display: none;
         }
 
-        .tr {
-            font-weight: bold;
+        .profile-img {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
         }
 
-        /* Gaya untuk tombol "Tambah Data" */
+        .edit-link, .delete-link {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .delete-link {
+            color: #FF0000;
+        }
+
         .btn-add {
             background-color: palevioletred;
             color: #fff;
@@ -61,44 +76,30 @@
             border: none;
             cursor: pointer;
             text-decoration: none;
+            margin-top: 20px;
+            display: block;
+            width: 95%;
+            text-align: center;
         }
 
         .btn-add:hover {
-            background-color: pink;
-        }
-
-        /* Gaya untuk gambar profil */
-        .profile-img {
-            border-radius: 100%;
-            margin-left: 10px;
-        }
-
-        /* Gaya untuk tautan Edit dan Hapus */
-        .edit-link, .delete-link {
-            text-decoration: none;
-            color: #007BFF;
-            margin-right: 10px;
-        }
-
-        .delete-link {
-            color: #FF0000;
+            background-color: plum;
         }
     </style>
 </head>
-
 <body>
     <div class="container">
         <h1>View Data</h1>
         <a class="btn-add" href="./form_add.php">Tambah Data</a>
         <table>
             <thead>
-                <tr class="tr">
+                <tr>
                     <th class="satu">No</th>
                     <th hidden>Nik</th>
                     <th>Nama</th>
                     <th>Judul</th>
                     <th>Deskripsi</th>
-                    <th>Edit / delete</th>
+                    <th>Edit / Hapus</th>
                 </tr>
             </thead>
             <tbody>
@@ -111,7 +112,7 @@
                     echo "<tr>";
                     echo "<td>" . $nomor . "</td>";
                     echo "<td hidden>" . $dosen['nik_dos'] . "</td>";
-                    echo "<td style='display: flex; align-items: center;'>" . $dosen['nm_dos'] . "</td>";
+                    echo "<td>" . $dosen['nm_dos'] . "</td>";
                     echo "<td>" . $dosen['almt_dos'] . "</td>";
                     echo "<td>" . $dosen['jkl_dos'] . "</td>";
                     echo "<td>";
@@ -126,5 +127,4 @@
         </table>
     </div>
 </body>
-
 </html>

@@ -6,27 +6,34 @@
     <style>
       body {
         font-family: Arial, sans-serif;
-        background-color: pink; /* Ganti dengan warna pink yang diinginkan */
-        margin: 0;
+        background-color: #ffc436;
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100vh;
+        margin: 0;
       }
 
       .center {
-        background-color: #fff;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-        padding: 20px;
-        border-radius: 8px;
+        background-color: #f7e987;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 40px;
+        border-radius: 10px;
         width: 400px;
         text-align: center;
       }
 
       h1 {
-        margin: 0;
-        padding: 10px 0;
-        color: #333;
+        margin-bottom: 20px;
+        color: palevioletred;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+      }
+
+      h1 img {
+        margin-right: 10px;
       }
 
       form {
@@ -35,47 +42,47 @@
 
       .txt_field {
         position: relative;
-        margin-bottom: 20px;
+        margin-bottom: 25px;
+        width: 90%;
       }
 
       .txt_field input {
-        width: 90%;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
+        width: 100%;
+        padding: 15px;
+        border: 1px solid palevioletred;
+        border-radius: 5px;
         font-size: 16px;
+        color: #333;
       }
 
       .txt_field span::before {
         content: "";
         position: absolute;
         height: 2px;
-        width: 80%;
+        width: 100%;
         background: palevioletred;
         bottom: 0;
         left: 0;
         transform: scaleX(0);
-        transform-origin: bottom right;
         transition: transform 0.3s ease;
       }
 
       .txt_field input:focus + span::before {
         transform: scaleX(1);
-        transform-origin: bottom left;
       }
 
       .txt_field label {
         position: absolute;
-        top: 10px;
+        top: -10px;
         left: 0;
-        font-size: 16px;
-        color: #333;
+        font-size: 14px;
+        color: #888;
         transition: top 0.3s ease, font-size 0.3s ease;
       }
 
       .txt_field input:valid + span + label,
       .txt_field input:focus + span + label {
-        top: -15px;
+        top: -25px;
         font-size: 12px;
         color: palevioletred;
       }
@@ -84,19 +91,21 @@
         background-color: palevioletred;
         color: #fff;
         border: none;
-        padding: 10px 20px;
+        padding: 15px 30px;
         cursor: pointer;
-        border-radius: 4px;
+        border-radius: 5px;
+        font-size: 16px;
+        transition: background-color 0.3s;
       }
 
       .button:hover {
-        background-color: pink;
+        background-color: plum;
       }
 
       .signup_link {
-        margin-top: 10px;
+        margin-top: 20px;
         font-size: 14px;
-        color: #333;
+        color: #888;
       }
 
       .signup_link a {
@@ -108,7 +117,10 @@
 
   <body>
     <div class="center">
-      <h1>Login Dashboard</h1>
+      <h1>
+        <img src="img/amikom.png" alt="amikom" style="width: 40px" />
+        Login Dashboard
+      </h1>
       <form action="login.php" method="POST">
         <div class="txt_field">
           <input type="username" name="username" required />
@@ -121,12 +133,10 @@
           <label>Password</label>
         </div>
 
-        <!-- Perlu ada perubahan logika untuk mencegah login sebelum akun benar -->
-
         <button type="submit" name="login" class="button">Login</button>
 
         <div class="signup_link">
-          Register Member? <a href="register.html">Signup</a>
+          Buat Member Akun? <a href="register.html">Sign Up</a>
         </div>
       </form>
     </div>

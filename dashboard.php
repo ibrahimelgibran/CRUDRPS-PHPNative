@@ -9,6 +9,7 @@
       body {
         padding: 0;
         margin: 0;
+        background-color: #f7e987;
       }
 
         .centered-image {
@@ -19,8 +20,10 @@
             margin-top: -150px;
         } 
 
+        .h1 {
+          color: #fff;
+        }
         .footer {
-            background-color: palevioletred;
             color: #fff; 
             text-align: center;
             padding: 20px; 
@@ -34,14 +37,14 @@
     </style>
   </head>
   <body>
-    <div class="container-fluid text-center w-100 pt-3 pb-5 bg-body-secondary">
-        <h1>Dashboard</h1>
-        <p>Jalan Ringroad Utara, Condong catur, Sleman Yogyakarta</p>
+    <div class="container-fluid text-center w-100 pt-3 pb-5" style="background-color: #ffc436;">
+        <h1 class="h1">Dashboard</h1>
+        <p style="color: #fff;">Jalan Ringroad Utara, Condong catur, Sleman Yogyakarta</p>
         <hr>
 
-        <a href="form_add.php">Add RPS</a> |
-        <a href="view_data.php">List RPS</a> |
-        <a href="index.html">Logout</a> |
+        <a href="form_add.php" style="color: #fff;">Add RPS</a> |
+        <a href="view_data.php" style="color: #fff;">List RPS</a> |
+        <a href="index.html" style="color: #fff;">Logout</a> |
     </div>
 
     <div class="centered-image">
@@ -49,11 +52,11 @@
     </div>
 
     <div class="text-center" style="margin-top: -200px">
-        <h3>Universitas Amikom Yogyakarta</h3>
+        <h3 style="color: #B0578D;">Universitas Amikom Yogyakarta</h3>
     </div>
 
-    <footer class="container footer">
-            <p>Ibrahim El Gibran - 22.01.4774</p>
+    <footer class="container footer" style="background-color: #ffc436;" style="width: 100%">
+            <p>Aulia Ratih Kusuma - 22.01.4740</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>

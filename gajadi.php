@@ -1,2 +1,2 @@
 <?php
- echo "Ga Jadi Login";
+ echo "Gagal Login";
